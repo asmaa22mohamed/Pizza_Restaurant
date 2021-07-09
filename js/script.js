@@ -137,31 +137,6 @@ if (pageTitle.text === 'Pizza') {
     });
   });
 
-  // dots smooth scroll
-  dots.forEach((dot) =>
-    dot.addEventListener('click', function () {
-      window.scrollTo({
-        top: document.querySelector(this.dataset.x).offsetTop - 100,
-        behavior: 'smooth',
-      });
-    })
-  );
-
-  // show box model
-  menuImgs.forEach((img) =>
-    img.addEventListener('click', function () {
-      const arr = Array.from(this.parentElement.parentElement.children);
-
-      arr.forEach((div) => div.classList.remove('active'));
-
-      this.parentElement.classList.add('active');
-      boxModel.classList.add('active');
-      boxModelImage.src = this.src;
-      boxModelImage.classList.add('active');
-      body.classList.add('hide-scroll');
-    })
-  );
-
   // box model functions
   function boxModelFun(e) {
     // close box model
