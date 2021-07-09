@@ -1241,3 +1241,19 @@ footer .newsletter i {
   }
 }
 /*End Home Page Responsive*/
+/* ToTop */
+#scrollUp {
+  width: 50px;
+  height: 50px;
+  background-color: #4caf50;
+  color: #c00a27;
+  line-height: 45px;
+  right: 20px;
+  bottom: 60px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 50px;
+  z-index: 9811 !important;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}

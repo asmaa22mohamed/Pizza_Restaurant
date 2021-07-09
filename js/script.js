@@ -70,24 +70,12 @@ navNavigationBarLi.forEach((li) =>
   })
 );
 
-// svg-up smooth scroll
-svgUp.addEventListener('click', () => {
-  window.scroll({
-    top: 0,
-    behavior: 'smooth',
-  });
-});
-
 window.onscroll = function () {
   // make navbar fixed & change logo color
   if (window.pageYOffset > headerSection.offsetHeight - 75) {
     nav.classList.add('active');
-    logoImage.src =
-      'https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988525/logo-rosa.png';
   } else {
     nav.classList.remove('active');
-    logoImage.src =
-      'https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/logo-rosa-white.png';
   }
 
   // header welcome fade out and in

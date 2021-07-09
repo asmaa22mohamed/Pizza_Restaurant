@@ -8,7 +8,7 @@
     <title>Pizza</title>
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro" rel="stylesheet">
-   
+
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -218,9 +218,36 @@
         </ul>
     </div>
     <!--End Copy-Right-->
+    <!--Start ToTop -->
+
+    <a id="scrollUp" href="#top" style="display: none; position: fixed; z-index: 2147483647;" onclick="topFunction()"><i
+            class="fa fa-angle-up"></i></a>
+    <!-- End ToTop -->
     <!-- Start Script -->
     <script src="./js/script.js"></script>
     <!-- End Script -->
+    <script>
+        //ToTop
+        myScroll = document.getElementById('scrollUp');
+
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                myScroll.style.display = 'block';
+            } else {
+                myScroll.style.display = 'none';
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
 </body>
 
 </html>
